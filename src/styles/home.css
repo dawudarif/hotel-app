@@ -1,0 +1,134 @@
+.home {
+  position: absolute;
+  top: 0;
+}
+
+.image-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.img-title {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.489);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: inherit;
+}
+
+.img-title div {
+  padding: 12rem 3rem;
+  color: var(--bg);
+  width: 50%;
+  line-height: 1;
+}
+
+.img-title h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.img-title h1 {
+  font-size: 5rem;
+  font-family: Young Serif, monospace, system-ui, 'Open Sans', 'Helvetica Neue';
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.img-title h2 {
+  font-family: Young Serif, monospace, system-ui, 'Open Sans', 'Helvetica Neue';
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.2em;
+}
+
+.img-title h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.home-btn {
+  color: var(--bg);
+  gap: 2rem;
+}
+
+.home-btn button {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.home-btn button:hover {
+  background-color: white;
+  color: black;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+#home-details {
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.home-item {
+  height: 20rem;
+  width: 70%;
+}
+.home-item div {
+  border-left: 10px solid var(--blue);
+  padding: 1rem;
+}
+
+.home-item img {
+  width: 70%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.home-item h1 {
+  font-size: 2rem;
+  font-family: Young Serif, monospace, system-ui, 'Open Sans', 'Helvetica Neue';
+  color: var(--blue);
+}
+
+.home-item p {
+  font-size: 1rem;
+}
+
+/* Extra Small (XS) */
+@media (max-width: 575px) {
+  /* Your CSS rules for mobile devices in portrait mode */
+}
+
+/* Small (SM) */
+@media (min-width: 575px) and (max-width: 767px) {
+  /* Your CSS rules for mobile devices in landscape mode and small tablets */
+}
+
+/* Medium (MD) */
+@media (min-width: 767px) and (max-width: 991px) {
+  /* Your CSS rules for larger tablets and small laptops */
+}
+
+/* Large (LG) */
+@media (min-width: 991px) and (max-width: 1200px) {
+  /* Your CSS rules for most desktop and laptop screens */
+}
+
+/* Extra Large (XL) */
+@media (min-width: 1200px) {
+  /* Your CSS rules for larger desktop screens and high-resolution displays */
+}
