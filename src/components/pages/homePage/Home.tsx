@@ -2,6 +2,7 @@ import '../../../styles/home.css';
 import HomeExplore from './HomeExplore';
 import mainImage from '../../../assets/main02.jpg';
 import { BsArrowDownCircleFill } from 'react-icons/bs';
+import Testimonials from './Testimonials';
 
 const Home = () => {
   const scrollToSection = (sectionId: string) => {
@@ -37,6 +38,10 @@ const Home = () => {
 
       <div className='flex-col' id='home-details'>
         <HomeExplore />
+      </div>
+
+      <div className='testimonials flex-col'>
+        <Testimonials />
       </div>
     </div>
   );

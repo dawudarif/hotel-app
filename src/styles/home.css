@@ -9,6 +9,10 @@
   left: 0;
   right: 0;
 }
+.image-container img {
+  width: 100%;
+  object-fit: cover;
+}
 
 .img-title {
   position: absolute;
@@ -68,14 +72,23 @@
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
-
 .home-btn button:hover {
   background-color: white;
   color: black;
 }
+.home-button {
+  padding: 10px 25px;
+  font-size: 20px;
+  background-color: transparent;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-.image-container img {
-  width: 100%;
+.home-button:hover {
+  background-color: var(--blue);
+  color: white;
 }
 
 #home-details {
@@ -108,27 +121,225 @@
   font-size: 1rem;
 }
 
+.testimonials {
+  margin-top: 4rem;
+}
+
+.testimonials h1 {
+  font-size: 2rem;
+  font-family: Young Serif, monospace, system-ui, 'Open Sans', 'Helvetica Neue';
+  color: var(--blue);
+  padding: 1rem;
+}
+
+.testimonial-body {
+  width: 70%;
+  gap: 1rem;
+  color: var(--blue);
+  transition-duration: 0.5s;
+  transition: all;
+}
+
+.testimonial-body h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.testimonial-body h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.testimonial-body button {
+  background-color: transparent;
+  color: var(--blue);
+  border: none;
+}
+
 /* Extra Small (XS) */
 @media (max-width: 575px) {
-  /* Your CSS rules for mobile devices in portrait mode */
+  .image-container {
+    height: 100vh;
+  }
+  .image-container img {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+  }
+  .img-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .img-title div {
+    padding: 8rem 1rem;
+    width: 80%;
+  }
+  .img-title h1 {
+    font-size: 3rem;
+  }
+  .img-title h3,
+  .img-title h4 {
+    font-size: 1rem;
+  }
+  .img-title h2 {
+    font-size: 1.5rem;
+  }
+  .home-item {
+    width: 90%;
+    height: max-content;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .home-item h1 {
+    font-size: 1.5rem;
+  }
+  .home-item p {
+    font-size: 0.8rem;
+  }
+  .home-item img {
+    height: 100%;
+  }
+
+  .home-btn {
+    gap: 1rem;
+  }
+
+  .home-btn button {
+    padding: 8px 15px;
+  }
+  .home-button {
+    padding: 5px 12px;
+    font-size: 15px;
+  }
+  #home-details {
+    gap: 3rem;
+    padding: 0rem 1rem;
+  }
+  .testimonial-body h2,
+  .testimonial-body h4 {
+    font-size: 1rem;
+  }
+  .testimonials h1 {
+    font-size: 1.5rem;
+  }
 }
 
 /* Small (SM) */
 @media (min-width: 575px) and (max-width: 767px) {
-  /* Your CSS rules for mobile devices in landscape mode and small tablets */
+  .image-container {
+    height: 80vh;
+  }
+  .image-container img {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+  }
+  .img-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .img-title div {
+    padding: 8rem 1rem;
+    width: 80%;
+  }
+  .img-title h1 {
+    font-size: 3rem;
+  }
+  .img-title h3,
+  .img-title h4 {
+    font-size: 1rem;
+  }
+  .img-title h2 {
+    font-size: 1.5rem;
+  }
+  .home-item {
+    width: 90%;
+    height: max-content;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .home-item img {
+    height: 100%;
+  }
+  .home-btn {
+    gap: 1rem;
+  }
+  .home-btn button {
+    padding: 8px 15px;
+  }
+  .home-button {
+    padding: 5px 12px;
+    font-size: 15px;
+  }
+  #home-details {
+    gap: 3rem;
+  }
+  .testimonial-body h2,
+  .testimonial-body h4 {
+    font-size: 1rem;
+  }
+  .testimonials h1 {
+    font-size: 1.5rem;
+  }
 }
 
 /* Medium (MD) */
 @media (min-width: 767px) and (max-width: 991px) {
-  /* Your CSS rules for larger tablets and small laptops */
+  .img-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-title div {
+    padding: 3rem 1rem;
+    width: 60%;
+  }
+  .img-title h1 {
+    font-size: 3rem;
+  }
+  .img-title h2 {
+    font-size: 2rem;
+  }
+  .home-item {
+    width: 90%;
+  }
+  .home-item img {
+    height: 80%;
+  }
+  .home-btn button {
+    padding: 10px 20px;
+  }
+  .home-button {
+    padding: 8px 15px;
+  }
+  #home-details {
+    gap: 3rem;
+  }
 }
 
 /* Large (LG) */
 @media (min-width: 991px) and (max-width: 1200px) {
-  /* Your CSS rules for most desktop and laptop screens */
-}
-
-/* Extra Large (XL) */
-@media (min-width: 1200px) {
-  /* Your CSS rules for larger desktop screens and high-resolution displays */
+  .img-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-title div {
+    padding: 10rem 1rem;
+    width: 70%;
+  }
+  .img-title h1 {
+    font-size: 4rem;
+  }
+  .img-title h2 {
+    font-size: 2rem;
+  }
+  .home-item {
+    width: 90%;
+  }
+  .home-item img {
+    height: 90%;
+  }
 }
