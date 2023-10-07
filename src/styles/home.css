@@ -95,7 +95,7 @@
 }
 
 #home-details {
-  padding-top: 40rem;
+  padding-top: 45rem;
   gap: 1rem;
 }
 
@@ -175,7 +175,7 @@
   }
   .img-title div {
     padding: 8rem 1rem;
-    width: 80%;
+    width: 80% !important;
   }
   .img-title h1 {
     font-size: 3rem;
@@ -251,7 +251,7 @@
   }
   .img-title div {
     padding: 8rem 1rem;
-    width: 80%;
+    width: 80% !important;
   }
   .img-title h1 {
     font-size: 3rem;

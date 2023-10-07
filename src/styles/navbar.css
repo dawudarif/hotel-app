@@ -47,16 +47,18 @@ nav {
   list-style: none;
   padding: 0 1rem;
 }
+
 .navbar a {
   text-decoration: none;
   color: var(--bg);
   font-weight: 500;
   font-size: 1.2rem;
-  border-bottom: 4px solid transparent;
   padding-bottom: 0.5rem;
 }
 
 .navbar a:hover {
+  transition: all 1s;
+  transform: translateX(100%);
   border-bottom: 4px solid var(--bg);
 }
 

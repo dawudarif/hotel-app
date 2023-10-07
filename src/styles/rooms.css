@@ -1,24 +1,142 @@
+.rooms-head {
+  width: 80%;
+}
+
+.rooms-head {
+  color: var(--blue);
+}
+
+.rooms-head h1 {
+  font-family: Young Serif, monospace, system-ui, 'Open Sans', 'Helvetica Neue';
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+}
+
+.rooms-head p {
+  font-family: 500;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+.rooms-wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin-top: 45rem;
+}
+
+.rooms-parent {
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.single-room {
+  border: 2px solid #5555;
+}
+
+.single-room img {
+  width: 50rem;
+}
+
+.single-room h1 {
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  background-color: var(--blue);
+  color: var(--bg);
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.plus {
+  background-color: var(--blue);
+  border-radius: 50%;
+  color: var(--bg);
+}
+
+.room-details {
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 3rem;
+  box-sizing: border-box;
+}
+
+.room-details button {
+  background-color: var(--blue);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: var(--bg);
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+.room-details button:hover {
+  background-color: var(--bg);
+  color: var(--blue);
+}
+
+.span-parent {
+  gap: 1rem;
+  font-weight: 500;
+}
+
 /* Extra Small (XS) */
 @media (max-width: 575px) {
-  /* Your CSS rules for mobile devices in portrait mode */
+  .single-room img {
+    width: 90vw;
+  }
+  .single-room h1 {
+    font-size: 1rem;
+  }
+  .room-details {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  .room-details button {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+  .rooms-head h1 {
+    font-size: 2rem;
+  }
+  .rooms-wrapper {
+    margin-top: 35rem;
+  }
 }
 
 /* Small (SM) */
 @media (min-width: 575px) and (max-width: 767px) {
-  /* Your CSS rules for mobile devices in landscape mode and small tablets */
+  .single-room img {
+    width: 90vw;
+  }
+  .single-room h1 {
+    font-size: 1rem;
+  }
+  .room-details {
+    padding: 1rem;
+  }
+  .room-details button {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+  .rooms-head h1 {
+    font-size: 2rem;
+  }
+  .rooms-wrapper {
+    margin-top: 30rem;
+  }
 }
 
 /* Medium (MD) */
 @media (min-width: 767px) and (max-width: 991px) {
-  /* Your CSS rules for larger tablets and small laptops */
+  .single-room img {
+    width: 80vw;
+  }
 }
 
 /* Large (LG) */
 @media (min-width: 991px) and (max-width: 1200px) {
   /* Your CSS rules for most desktop and laptop screens */
-}
-
-/* Extra Large (XL) */
-@media (min-width: 1200px) {
-  /* Your CSS rules for larger desktop screens and high-resolution displays */
 }
