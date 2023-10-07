@@ -13,7 +13,7 @@ const Home = () => {
   };
 
   return (
-    <div className='home'>
+    <main className='home'>
       <div className='image-container'>
         <img src={mainImage} alt='main' />
         <div className='img-title'>
@@ -43,7 +43,7 @@ const Home = () => {
       <div className='testimonials flex-col'>
         <Testimonials />
       </div>
-    </div>
+    </main>
   );
 };
 

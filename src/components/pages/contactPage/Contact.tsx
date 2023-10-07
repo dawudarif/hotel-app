@@ -4,7 +4,7 @@ import { BsArrowRight } from 'react-icons/bs';
 const Contact = () => {
   return (
     <div className='contact'>
-      <div className='contact-heading'>CONTACT-US</div>
+      <div className='contact-heading flex'>CONTACT-US</div>
       <div className='contact-head'>
         <h1> We are here for you</h1>
         <h5>
