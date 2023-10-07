@@ -14,25 +14,27 @@ const Hero: React.FC<HeroProps> = ({ section, src }) => {
   };
 
   return (
-    <div className='image-container'>
+    <div className='image-container flex'>
       <img src={src} alt='main' />
-      <div className='img-title'>
-        <div>
-          <h3>welcome to</h3>
-          <h1>luxury</h1>
-          <h2>hotels</h2>
-          <h4>
-            Book your stay and enjoy luxury redefined at the most affordable
-            rates
-          </h4>
+      <div className='img-title flex'>
+        <div className='img-wrapper'>
+          <div>
+            <h3>welcome to</h3>
+            <h1>luxury</h1>
+            <h2>hotels</h2>
+            <h4>
+              Book your stay and enjoy luxury redefined at the most affordable
+              rates
+            </h4>
+          </div>
+          <span className='home-btn flex-col'>
+            <button>Book Now</button>
+            <BsArrowDownCircleFill
+              size={40}
+              onClick={() => scrollToSection(section)}
+            />
+          </span>
         </div>
-        <span className='home-btn flex-col'>
-          <button>Book Now</button>
-          <BsArrowDownCircleFill
-            size={40}
-            onClick={() => scrollToSection(section)}
-          />
-        </span>
       </div>
     </div>
   );

@@ -22,7 +22,7 @@ const Testimonials = () => {
   };
 
   return (
-    <>
+    <div>
       <h1>Testimonials</h1>
       <div className='testimonial-body flex-col'>
         <h2>"{TestimonialsData[textIndex].text}"</h2>
@@ -43,7 +43,7 @@ const Testimonials = () => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

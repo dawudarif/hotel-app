@@ -21,6 +21,12 @@
   height: inherit;
 }
 
+.img-wrapper {
+  width: 100% !important;
+  max-width: 1600px;
+  text-align: left;
+}
+
 .img-title div {
   padding: 12rem 3rem;
   color: var(--bg);
@@ -126,7 +132,7 @@
   font-size: 2rem;
   font-family: Young Serif, monospace, system-ui, 'Open Sans', 'Helvetica Neue';
   color: var(--blue);
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .testimonial-body {
@@ -220,9 +226,10 @@
   }
   .testimonials h1 {
     font-size: 1.5rem;
+    text-align: center;
   }
   .testimonial-body {
-    width: 90%;
+    width: 90vw;
   }
 }
 
@@ -285,9 +292,10 @@
   }
   .testimonials h1 {
     font-size: 1.5rem;
+    text-align: center;
   }
   .testimonial-body {
-    width: 90%;
+    width: 90vw;
   }
 }
 

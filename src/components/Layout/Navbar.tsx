@@ -9,8 +9,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav>
-        <div className='inner-nav'>
+      <nav className='flex'>
+        <main className='nav-wrapper'>
           <div className='nav-brand flex-col'>
             <h4>Luxury</h4>
             <h6>hotels</h6>
@@ -32,7 +32,7 @@ const Navbar = () => {
           <div className='sandwich'>
             <AiOutlineMenu size={30} onClick={() => setView(!view)} />
           </div>
-        </div>
+        </main>
       </nav>
 
       <div

@@ -1,17 +1,18 @@
 nav {
   background-color: transparent;
   width: 100%;
-  box-sizing: border-box;
   position: relative;
   z-index: 2;
 }
 
-.inner-nav {
+.nav-wrapper {
   height: 4rem;
   max-width: 1600px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
   padding: 1rem 4rem;
 }
 
@@ -22,7 +23,7 @@ nav {
   border-radius: 3rem;
   font-family: Young Serif, monospace, system-ui, 'Open Sans', 'Helvetica Neue',
     sans-serif;
-  height: 6.5rem;
+  height: 8rem;
   width: 8rem;
   justify-content: flex-end;
   text-transform: uppercase;
@@ -37,16 +38,16 @@ nav {
   font-size: 1rem;
 }
 
-nav ul {
+.navbar ul {
   position: absolute;
   right: 3rem;
 }
 
-nav li {
+.navbar li {
   list-style: none;
   padding: 0 1rem;
 }
-nav a {
+.navbar a {
   text-decoration: none;
   color: var(--bg);
   font-weight: 500;
@@ -55,7 +56,7 @@ nav a {
   padding-bottom: 0.5rem;
 }
 
-nav a:hover {
+.navbar a:hover {
   border-bottom: 4px solid var(--bg);
 }
 
@@ -117,10 +118,6 @@ nav a:hover {
   color: var(--black);
 }
 
-/* .mobile-nav-hide {
-  display: none;
-} */
-
 /* Extra Small (XS) */
 @media (max-width: 575px) {
   .sandwich {
@@ -129,13 +126,13 @@ nav a:hover {
   .navbar {
     display: none;
   }
-  .inner-nav {
+  .nav-wrapper {
     height: 4rem;
     padding: 1rem;
   }
 
   .nav-brand {
-    height: 5.5rem;
+    height: 8rem;
     width: 5rem;
     margin-bottom: 5rem;
     border-radius: 2rem;
@@ -163,12 +160,12 @@ nav a:hover {
     display: none;
   }
 
-  .inner-nav {
+  .nav-wrapper {
     height: 4rem;
   }
 
   .nav-brand {
-    height: 5.5rem;
+    height: 8rem;
     width: 5rem;
     margin-bottom: 5rem;
     border-radius: 2rem;
@@ -196,7 +193,7 @@ nav a:hover {
     display: none;
   }
   .nav-brand {
-    height: 4rem;
+    height: 8rem;
     width: 6rem;
     margin-bottom: 4.5rem;
     border-radius: 2.5rem;
