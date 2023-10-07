@@ -50,6 +50,13 @@ const Footer = () => {
           <p>Instagram</p>
         </span>
       </div>
+      <div className='newsletter flex-col'>
+        <h2>Subscribe to Newsletter</h2>
+        <div className='flex'>
+          <input type='email' required placeholder='example@example.com' />
+          <button>Submit</button>
+        </div>
+      </div>
       <div className='footer-box'></div>
     </footer>
   );

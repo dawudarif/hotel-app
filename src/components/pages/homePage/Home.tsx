@@ -1,41 +1,13 @@
 import '../../../styles/home.css';
 import HomeExplore from './HomeExplore';
-import mainImage from '../../../assets/main02.jpg';
-import { BsArrowDownCircleFill } from 'react-icons/bs';
-import Testimonials from './Testimonials';
+import mainImage from '../../../assets/main03.png';
+import Testimonials from '../../common/Testimonials';
+import Hero from '../../common/Hero';
 
 const Home = () => {
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <main className='home'>
-      <div className='image-container'>
-        <img src={mainImage} alt='main' />
-        <div className='img-title'>
-          <div>
-            <h3>welcome to</h3>
-            <h1>luxury</h1>
-            <h2>hotels</h2>
-            <h4>
-              Book your stay and enjoy luxury redefined at the most affordable
-              rates
-            </h4>
-          </div>
-          <span className='home-btn flex-col'>
-            <button>Book Now</button>
-            <BsArrowDownCircleFill
-              size={40}
-              onClick={() => scrollToSection('home-details')}
-            />
-          </span>
-        </div>
-      </div>
-
+      <Hero section='home-details' src={mainImage} />
       <div className='flex-col' id='home-details'>
         <HomeExplore />
       </div>

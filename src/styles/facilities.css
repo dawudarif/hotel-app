@@ -1,24 +1,86 @@
+#facilities {
+  margin-bottom: 4rem;
+}
+
+#facilities h1 {
+  margin-top: 45rem;
+  font-size: 3rem;
+  color: var(--blue);
+  font-family: Young Serif, monospace, system-ui, 'Open Sans', 'Helvetica Neue';
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#facilities h4 {
+  font-size: 1rem;
+  color: var(--blue);
+}
+
+.facility-images {
+  gap: 2rem;
+}
+
+.facility-images img {
+  width: 50rem;
+  border-radius: 0.5rem;
+}
+
+#facilities,
+.facility-images {
+  padding: 0 10rem;
+}
+
+.fa-page .testimonials {
+  margin-bottom: 5rem;
+}
+
 /* Extra Small (XS) */
 @media (max-width: 575px) {
-  /* Your CSS rules for mobile devices in portrait mode */
+  .facility-images img {
+    width: 20rem;
+  }
+  #facilities,
+  .facility-images {
+    padding: 0 1rem;
+  }
+  #facilities h1 {
+    margin-top: 35rem;
+  }
+  #facilities h1 {
+    font-size: 2rem;
+  }
+  #facilities h4 {
+    font-size: 0.8rem;
+  }
 }
 
 /* Small (SM) */
 @media (min-width: 575px) and (max-width: 767px) {
-  /* Your CSS rules for mobile devices in landscape mode and small tablets */
+  .facility-images img {
+    width: 30rem;
+  }
+  #facilities,
+  .facility-images {
+    padding: 0 2rem;
+  }
+  #facilities h1 {
+    margin-top: 30rem;
+  }
+  #facilities h1 {
+    font-size: 2rem;
+  }
+  #facilities h4 {
+    font-size: 0.8rem;
+  }
 }
 
 /* Medium (MD) */
 @media (min-width: 767px) and (max-width: 991px) {
-  /* Your CSS rules for larger tablets and small laptops */
-}
-
-/* Large (LG) */
-@media (min-width: 991px) and (max-width: 1200px) {
-  /* Your CSS rules for most desktop and laptop screens */
-}
-
-/* Extra Large (XL) */
-@media (min-width: 1200px) {
-  /* Your CSS rules for larger desktop screens and high-resolution displays */
+  .facility-images img {
+    width: 40rem;
+  }
+  #facilities,
+  .facility-images {
+    padding: 0 6rem;
+  }
 }

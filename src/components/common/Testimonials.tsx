@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { GrLinkNext, GrLinkPrevious } from 'react-icons/gr';
-import { TestimonialsData } from '../../../data/Testimonials';
+import { TestimonialsData } from '../../data/Testimonials';
 
 const Testimonials = () => {
   const [textIndex, setTextIndex] = useState(0);
@@ -33,13 +33,13 @@ const Testimonials = () => {
 
         <div>
           <button onClick={handlePrev} disabled={textIndex === 0}>
-            <GrLinkPrevious size={size} />
+            <GrLinkPrevious size={size} style={{ color: 'var(--blue)' }} />
           </button>
           <button
             onClick={handleNext}
             disabled={textIndex === TestimonialsData.length - 1}
           >
-            <GrLinkNext size={size} />
+            <GrLinkNext size={size} style={{ color: 'var(--blue)' }} />
           </button>
         </div>
       </div>

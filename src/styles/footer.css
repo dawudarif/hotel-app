@@ -4,7 +4,7 @@ footer {
   background-color: var(--blue);
   justify-content: space-between;
   box-sizing: content-box;
-  gap: 15rem;
+  gap: 10rem;
   position: relative;
   margin-top: 2rem;
 }
@@ -78,6 +78,39 @@ footer {
   gap: 1rem;
 }
 
+.newsletter {
+  gap: 2rem;
+}
+
+.newsletter h2 {
+  font-size: 1.2rem;
+  color: var(--bg);
+}
+
+.newsletter input {
+  padding: 0.89rem 1rem;
+  width: 14rem;
+  font-size: 1rem;
+  border: 3px solid var(--bg);
+  box-sizing: border-box;
+}
+
+.newsletter button {
+  background-color: var(--brown);
+  color: var(--bg);
+  padding: 1rem;
+  border: none;
+  transition: all;
+  transition-duration: 0.5s;
+  border: 2px solid transparent;
+}
+
+.newsletter button:hover {
+  background-color: var(--bg);
+  border: 2px solid var(--brown);
+  color: var(--brown);
+}
+
 /* Extra Small (XS) */
 @media (max-width: 575px) {
   footer {
@@ -139,6 +172,6 @@ footer {
 /* Large (LG) */
 @media (min-width: 991px) and (max-width: 1200px) {
   footer {
-    gap: 10rem;
+    gap: 5rem;
   }
 }

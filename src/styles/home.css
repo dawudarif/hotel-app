@@ -7,7 +7,7 @@
 
 .image-container img {
   width: 100%;
-  height: 43rem;
+  height: 45rem;
   object-fit: cover;
 }
 
@@ -130,7 +130,7 @@
 }
 
 .testimonial-body {
-  width: 70%;
+  width: 40rem;
   gap: 1rem;
   color: var(--blue);
   transition-duration: 0.5s;
@@ -221,6 +221,9 @@
   .testimonials h1 {
     font-size: 1.5rem;
   }
+  .testimonial-body {
+    width: 90%;
+  }
 }
 
 /* Small (SM) */
@@ -282,6 +285,9 @@
   }
   .testimonials h1 {
     font-size: 1.5rem;
+  }
+  .testimonial-body {
+    width: 90%;
   }
 }
 
